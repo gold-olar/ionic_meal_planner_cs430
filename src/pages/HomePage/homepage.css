@@ -1,0 +1,70 @@
+.meal-plan-container {
+    padding: 16px;
+  }
+  
+  .section-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--ion-color-primary);
+  }
+  
+  .section-title ion-icon {
+    margin-right: 8px;
+  }
+  
+  ion-segment {
+    margin-bottom: 16px;
+  }
+  
+  .week-start-date {
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+    margin-bottom: 16px;
+  }
+  
+  .meal-card {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meal-card ion-card-header {
+    padding: 16px;
+  }
+  
+  .meal-card ion-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .meal-card ion-card-subtitle {
+    font-size: 0.9rem;
+    color: var(--ion-color-medium);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .meal-card ion-card-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .meal-card ion-card-content.expanded {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+  }
+  
+  .meal-card ion-item {
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --inner-padding-end: 0;
+  }
+  
+  .meal-card ion-button {
+    margin: 0;
+  }

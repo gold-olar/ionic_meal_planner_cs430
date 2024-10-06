@@ -1,0 +1,134 @@
+.recipe-list {
+    padding: 16px;
+    margin-bottom: 56px; /* Space for FAB */
+  }
+  
+  .recipe-card {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-card ion-card-header {
+    padding-bottom: 8px;
+  }
+  
+  .recipe-card ion-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--ion-color-dark);
+  }
+  
+  .recipe-card ion-card-subtitle {
+    font-size: 14px;
+    color: var(--ion-color-medium);
+    margin-top: 4px;
+  }
+  
+  .recipe-card ion-card-content {
+    padding-top: 8px;
+  }
+  
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  
+  .recipe-tag {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    --background: var(--ion-color-light);
+    --color: var(--ion-color-dark);
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .action-buttons ion-button {
+    --padding-start: 8px;
+    --padding-end: 8px;
+  }
+  
+  .recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .recipe-form ion-item {
+    --padding-start: 0;
+    --padding-end: 0;
+    --inner-padding-end: 0;
+  }
+  
+  .recipe-form ion-label {
+    padding: 0 16px;
+    margin-bottom: 8px;
+  }
+  
+  .custom-input {
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  
+  ion-textarea.custom-input {
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+  }
+  
+  .save-button {
+    margin-top: 24px;
+  }
+  
+  /* Ensure the select dropdown has consistent styling */
+  ion-select.custom-input::part(icon) {
+    margin-right: 16px;
+  }
+  
+  /* Style for the modal */
+  ion-modal {
+    --height: 90%;
+    --border-radius: 16px 16px 0 0;
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  ion-modal ion-content {
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+  }
+  
+  /* Specific styling for stacked labels */
+  ion-item.item-label-stacked ion-label {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 4px;
+  }
+  
+  @media (min-width: 768px) {
+    .recipe-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  
+    .recipe-card {
+      margin-bottom: 0;
+    }
+  
+    ion-modal {
+      --width: 600px;
+      --height: auto;
+      --border-radius: 16px;
+    }
+  }

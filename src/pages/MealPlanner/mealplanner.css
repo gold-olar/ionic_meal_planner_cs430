@@ -1,0 +1,128 @@
+.meal-plan-form {
+    padding: 16px;
+  }
+  
+  .day-card {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .day-card ion-card-header {
+    background-color: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .day-card ion-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .day-card ion-item {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
+  .date-picker-modal {
+    --height: auto;
+    --width: 90%;
+    --max-width: 350px;
+    --border-radius: 16px;
+    --background: var(--ion-background-color);
+  }
+  
+  .date-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .centered-calendar {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .centered-calendar .calendar-day {
+    color: var(--ion-text-color);
+  }
+  
+  .centered-calendar .calendar-day.today {
+    color: var(--ion-color-primary);
+  }
+  
+  .centered-calendar .calendar-day:not(.calendar-day-disabled):hover {
+    background-color: var(--ion-color-light);
+  }
+  
+  .centered-calendar .calendar-day.calendar-day-active {
+    background-color: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .date-picker-container ion-button {
+    margin-top: 20px;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .centered-calendar {
+      --background: var(--ion-background-color-step-100);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .meal-plan-form ion-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+  
+    .day-card {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .grocery-list-fab {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  
+  .grocery-list-text {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .grocery-list-fab ion-icon {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+  
+  /* Ensure the FAB is above other content */
+  ion-fab {
+    z-index: 1000;
+  }
+  
+  /* Adjust the FAB position for larger screens */
+  @media (min-width: 768px) {
+    .grocery-list-fab {
+      bottom: 20px;
+      right: 20px;
+    }
+  }

@@ -1,0 +1,7 @@
+{
+  "name": "mealPlanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
