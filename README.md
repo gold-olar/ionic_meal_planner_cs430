@@ -33,3 +33,15 @@ This will launch the app, and you can view it in your preferred browser
 To run the application successfully, you will need to set up environment variables by creating a firebase project and using the example.env file as a guide. 
 
 You can either create these variables yourself or request them from me. These environment variables are essential for the app to function correctly.
+
+
+
+
+## Video Walkthrough iOS 
+
+https://www.loom.com/share/8f0651e804854099acacbe59978acaa9 
+
+
+## Video Walkthrough web 
+
+https://www.loom.com/share/a1cf1adbaf014019a5fc505a18f21057 
