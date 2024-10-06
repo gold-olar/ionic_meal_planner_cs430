@@ -70,10 +70,14 @@ const App: React.FC = () => {
     await LocalNotifications.schedule({
       notifications: [
         {
-          title: "Meal Reminder",
-          body: "It's time for your Grilled Chicken Salad!",
-          id: 2,
-          schedule: { at: new Date(Date.now() + 1000) }, // 1 hour from now
+          title: "Meal Planner Reminder",
+          body: "It's time top plan your meal!",
+          id: 1,
+          schedule: {
+            every: "week",
+            on: { day: 1 },
+            at: new Date(Date.now() + 10000),
+          },
         },
       ],
     });
